@@ -1,0 +1,11 @@
+@import "compass/css3/box";
+@import "compass/css3/box-shadow";
+.nav {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	z-index: 10000;
+	@include single-box-shadow(0,2px,5px,0,rgba(0,0,0,0.15));
+}
