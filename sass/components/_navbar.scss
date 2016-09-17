@@ -1,5 +1,6 @@
 @import "compass/css3/box";
 @import "compass/css3/box-shadow";
+@import "compass/utilities/general/clearfix";
 .nav {
 	position: relative;
 	width: 100%;
@@ -8,4 +9,25 @@
 	background-color: #fff;
 	z-index: 10000;
 	@include single-box-shadow(0,2px,5px,0,rgba(0,0,0,0.15));
+	@include pie-clearfix;
+
+	& a {
+		text-decoration: none;
+	}
+
+	& .banner {
+		position: relative;
+		float: left;
+		clear: both;
+	}
+
+	& .nav-list .nav-list-items {
+		position: relative;
+		float: left;
+		padding: 0 12.5px;
+
+		& a {
+			font-size: 14px;color: #848484;font-weight: 700;
+		}
+	}
 }
