@@ -1,0 +1,14 @@
+.cms-input {
+  background-color: transparent;
+  border:1px solid #d1d1d1;
+  border-radius: 2px;
+  box-shadow: none;
+  padding: 6px 10px;
+  height: 38px;
+  outline: none;
+  font-size: 15px;
+  color: #757575;
+  &input :-webkit-autofill {
+    color: #f7f7f7 !important;
+  }
+}
