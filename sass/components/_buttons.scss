@@ -1,0 +1,16 @@
+@import "compass/css3/inline-block";
+.cms-btn {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cms-btn-group {
+  position: relative;
+  display: inline;
+  & .cms-btn {
+    @include inline-block;
+  }
+}
