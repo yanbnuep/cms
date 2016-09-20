@@ -18,3 +18,10 @@ $lg: 1200px;
     @content;
   }
 }
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,15 +1,27 @@
 @import "compass/css3/box-sizing";
-@import "compass/utilities/general/clearfix";
+
 *,body {
   @include box-sizing(border-box);
+}
+
+.static-wrapper {
+  position: relative;
+  width:960px;
+  margin: 0 auto;
+  min-height: 1px;
+  overflow: visible;
+  @include clearfix;
 }
 
 .fluid-wrapper {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  @include clearfix;
   @include sm {
     width: 960px;
+    margin: 0 auto;
+    min-height: 1px;
   }
 
   @include md {
