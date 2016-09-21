@@ -325,3 +325,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   display: block;
 }
+
+/* line 2, ../sass/components/_gallery.scss */
+.news-slider {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 5, ../sass/components/_gallery.scss */
+.news-slider .img {
+  position: absolute;
+}
+
+/* line 10, ../sass/components/_gallery.scss */
+.news-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 13, ../sass/components/_gallery.scss */
+.news-group .news-img {
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  *float: left;
+}

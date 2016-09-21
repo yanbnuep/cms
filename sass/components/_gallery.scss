@@ -1,0 +1,18 @@
+@import "compass/css3/inline-block";
+.news-slider {
+  position: relative;
+  @include inline-block;
+  .img {
+    position: absolute;
+  }
+}
+
+.news-group {
+  position: relative;
+  @include inline-block;
+  .news-img {
+    line-height:0;
+    @include inline-block;
+    *float: left;
+  }
+}
