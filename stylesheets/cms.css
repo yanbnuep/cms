@@ -326,7 +326,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 2, ../sass/components/_gallery.scss */
+/* line 5, ../sass/components/_gallery.scss */
 .news-slider {
   position: relative;
   display: inline-block;
@@ -335,12 +335,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
 }
-/* line 5, ../sass/components/_gallery.scss */
-.news-slider .img {
+/* line 8, ../sass/components/_gallery.scss */
+.news-slider .slid-img {
   position: absolute;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 11, ../sass/components/_gallery.scss */
+.news-slider .slid-img.hide-img {
+  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 14, ../sass/components/_gallery.scss */
+.news-slider .button {
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: pointer;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 21, ../sass/components/_gallery.scss */
+.news-slider .button:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 24, ../sass/components/_gallery.scss */
+.news-slider .slid-img .title {
+  position: relative;
+  top: -25px;
+  width: 100%;
+  display: block;
+  padding: 10px 5px 3px 5px;
+  min-height: 30px;
+  text-align: left;
+  background-color: #312667;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  color: #fafafa;
+  font-size: 17px;
+  font-weight: 600;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 42, ../sass/components/_gallery.scss */
+.news-slider .slid-img .bottom-note {
+  position: relative;
+  bottom: 0;
+  color: #fafafa;
+  font-size: 11px;
+  margin-top: 10px;
 }
 
-/* line 10, ../sass/components/_gallery.scss */
+/* line 51, ../sass/components/_gallery.scss */
 .news-group {
   position: relative;
   display: inline-block;
@@ -349,7 +407,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
 }
-/* line 13, ../sass/components/_gallery.scss */
+/* line 54, ../sass/components/_gallery.scss */
 .news-group .news-img {
   line-height: 0;
   display: inline-block;

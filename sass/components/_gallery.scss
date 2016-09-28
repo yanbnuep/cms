@@ -1,9 +1,50 @@
 @import "compass/css3/inline-block";
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
 .news-slider {
   position: relative;
   @include inline-block;
-  .img {
+  .slid-img {
     position: absolute;
+    @include single-transition(all,.2s);
+    &.hide-img { visibility: hidden; @include opacity(0);}
+  }
+
+  & .button {
+    position: absolute;
+    top: 50%;
+    background-color: #ffffff;
+    @include opacity(.5);
+    cursor: pointer;
+    @include single-transition(all,.2s);
+    &:hover {@include opacity(.8);}
+  }
+
+  & .slid-img .title {
+    position: relative;
+    top:-25px;
+    width: 100%;
+    display: block;
+    padding: 10px 5px 3px 5px;
+    min-height: 30px;
+    text-align: left;
+    background-color: #312667;
+    @include opacity(1);
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 600;
+    @include single-transition(all,.2s);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  & .slid-img .bottom-note {
+    position: relative;
+    bottom: 0;
+    color: #fafafa;
+    font-size: 11px;
+    margin-top: 10px;
   }
 }
 
