@@ -17,7 +17,7 @@
     background-color: #ffffff;
     @include opacity(.5);
     cursor: pointer;
-    @include single-transition(all,.2s);
+    @include single-transition(all,2s);
     &:hover {@include opacity(.8);}
   }
 
