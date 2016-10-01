@@ -55,20 +55,20 @@
         line-height: 60px;
     }
 </style>
-<div id="news-gallery" style="background-color: #f5f5f5;height: 300px;top: 0;position: relative;padding-top: 10px;">
+<div id="news-gallery" style="background-color: #fff;height: 300px;top: 0;position: relative;padding-top: 10px;">
     <div class="static-wrapper">
         <div class="news-slider" style="width: 480px;height: 280px;float: left">
-            <a href="" class="slid-img hide-img"><img src="./resoure/img/mirror.png" alt=""><div
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/mirror.png" alt=""><div
                     class="title"><span class="main-title">Woman In Mirorr</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slid-img hide-img"><img src="./resoure/img/lake.png" alt=""><div
+            <a href="" class="slide-img "><img src="./resoure/img/lake.png" alt=""><div
                     class="title"><span class="main-title">The Lake</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slid-img hide-img"><img src="./resoure/img/wave1.png" alt=""><div
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/wave1.png" alt=""><div
                     class="title"><span class="main-title">Sea Wave</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slid-img"><img src="./resoure/img/dragoneye.png" alt=""><div
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/dragoneye.png" alt=""><div
                     class="title"><span class="main-title">The Dragon's Eye</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <div class="button" id="slide-left"style="z-index: 1000"onclick="shownext('slid-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt=""></div>
-            <div class="button" id="slide-right"style="z-index: 1000" onclick="shownext('slid-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt=""></div>
-            <style>#slide-left,#slide-right{margin-top: -24px;width: 50px;height: 50px;border-radius: 50px;}
+            <div class="button" id="slide-left"style="z-index: 1000"onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt=""></div>
+            <div class="button" id="slide-right"style="z-index: 1000" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt=""></div>
+            <style>#slide-left,#slide-right{margin-top: -24px;width: 50px;height: 50px;border-radius: 50px;z-index:1000;}
                     #slide-right {right:0;}
             </style>
         </div>
@@ -87,6 +87,9 @@
         </div>
     </div>
  </div>
+<div class="list-nav">
+
+</div>
 </body>
 <script>
 function shownext(cls,aniCls,direction) {

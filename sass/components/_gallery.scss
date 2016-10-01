@@ -5,7 +5,7 @@
 .news-slider {
   position: relative;
   @include inline-block;
-  .slid-img {
+  .slide-img {
     position: absolute;
     @include single-transition(all,.2s);
     &.hide-img { visibility: hidden; @include opacity(0);}
@@ -13,15 +13,21 @@
 
   & .button {
     position: absolute;
+
     top: 50%;
     background-color: #ffffff;
-    @include opacity(.5);
+    @include opacity(.2);
     cursor: pointer;
-    @include single-transition(all,2s);
-    &:hover {@include opacity(.8);}
+    @include  single-transition(all,.1s);
+
   }
 
-  & .slid-img .title {
+  &:hover .button {
+    @include opacity(.5);
+    &:hover {@include opacity(.9);}
+  }
+
+  & .slide-img .title {
     position: relative;
     top:-25px;
     width: 100%;
@@ -39,7 +45,7 @@
     overflow: hidden;
   }
 
-  & .slid-img .bottom-note {
+  & .slide-img .bottom-note {
     position: relative;
     bottom: 0;
     color: #fafafa;
