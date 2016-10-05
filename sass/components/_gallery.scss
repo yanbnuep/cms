@@ -7,13 +7,14 @@
   @include inline-block;
   .slide-img {
     position: absolute;
+    height: 270px;
+    overflow: hidden;
     @include single-transition(all,.2s);
     &.hide-img { visibility: hidden; @include opacity(0);}
   }
 
   & .button {
     position: absolute;
-
     top: 50%;
     background-color: #ffffff;
     @include opacity(.2);
@@ -29,11 +30,11 @@
 
   & .slide-img .title {
     position: relative;
-    top:-25px;
+    top: 0;
     width: 100%;
     display: block;
-    padding: 10px 5px 3px 10px;
-    min-height: 30px;
+    padding: 10px 5px 0px 10px;
+    height: 50px;
     text-align: left;
     background-color: #312667;
     @include opacity(1);
@@ -51,15 +52,23 @@
     color: #fafafa;
     font-size: 11px;
     margin-top: 10px;
+    line-height: 0;
+    white-space: nowrap;
   }
 }
 
 .news-group {
   position: relative;
   @include inline-block;
+
   .news-img {
     line-height:0;
     @include inline-block;
     *float: left;
+  }
+  & .news-img {
+    @include inline-block();
+    float: left;
+    margin-left: 6px;
   }
 }

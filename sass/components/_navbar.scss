@@ -11,7 +11,7 @@
   z-index: 100;
   @include single-box-shadow(0, 2px, 5px, 0, rgba(0, 0, 0, 0.15));
   @include clearfix;
-
+  overflow: visible;
   & a {
     text-decoration: none;
   }
@@ -26,6 +26,7 @@
     list-style: none;
     @include clearfix;
     @include inline-block;
+    overflow: visible;
     & .nav-list-items {
       position: relative;
       float: left;
@@ -44,6 +45,7 @@
         }
       }
     }
+
     & .nav-dropdown-list {
       position: absolute;
       display: none;
@@ -51,7 +53,7 @@
       margin-left: -100px;
       width: 200px;
       background-color: #fff;
-      z-index:120;
+      z-index:999;
       list-style: none;
       @include box-shadow(rgba(black,.16) 0 0 13px);
       &:after {

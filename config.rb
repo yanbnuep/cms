@@ -1,5 +1,6 @@
 require 'compass/import-once/activate'
 require 'compass/import-once/activate'
+require 'ninesixty'
 # Require any additional compass plugins here.
 
 

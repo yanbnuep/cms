@@ -18,6 +18,7 @@
         <ul class="nav-list">
             <li class="nav-list-items" style="margin-left: 15px;"><a href="">Main</a></li>
             <li class="nav-list-items"><a href="">Phone</a></li>
+            <li class="nav-list-items"><a href="">Phone</a></li>
             <li class="nav-list-items has-dropdown"><a href="">Services</a>
                 <ul class="nav-dropdown-list z-depth-3" style="top: 55px;">
                     <li class="dropdown-list-items"><a href="">Inventory Control</a></li>
@@ -58,70 +59,82 @@
 <div id="news-gallery" style="background-color: #fff;height: 300px;top: 0;position: relative;padding-top: 10px;">
     <div class="static-wrapper">
         <div class="news-slider" style="width: 480px;height: 280px;float: left">
-            <a href="" class="slide-img hide-img"><img src="./resoure/img/mirror.png" alt=""><div
-                    class="title"><span class="main-title">Woman In Mirorr</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slide-img "><img src="./resoure/img/lake.png" alt=""><div
-                    class="title"><span class="main-title">The Lake</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slide-img hide-img"><img src="./resoure/img/wave1.png" alt=""><div
-                    class="title"><span class="main-title">Sea Wave</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <a href="" class="slide-img hide-img"><img src="./resoure/img/dragoneye.png" alt=""><div
-                    class="title"><span class="main-title">The Dragon's Eye</span><p class="bottom-note">2016/Sep/28</p></div></a>
-            <div class="button" id="slide-left"style="z-index: 1000"onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt=""></div>
-            <div class="button" id="slide-right"style="z-index: 1000" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt=""></div>
-            <style>#slide-left,#slide-right{margin-top: -24px;width: 50px;height: 50px;border-radius: 50px;z-index:1000;}
-                    #slide-right {right:0;}
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/mirror.png" alt="">
+                <div
+                        class="title"><span class="main-title">Woman In Mirorr</span>
+                    <p class="bottom-note">2016/Sep/28</p></div>
+            </a>
+            <a href="" class="slide-img "><img src="./resoure/img/lake.png" alt="">
+                <div
+                        class="title"><span class="main-title">The Lake</span>
+                    <p class="bottom-note">2016/Sep/28</p></div>
+            </a>
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/wave1.png" alt="">
+                <div
+                        class="title"><span class="main-title">Sea Wave</span>
+                    <p class="bottom-note">2016/Sep/28</p></div>
+            </a>
+            <a href="" class="slide-img hide-img"><img src="./resoure/img/dragoneye.png" alt="">
+                <div
+                        class="title"><span class="main-title">The Dragon's Eye</span>
+                    <p class="bottom-note">2016/Sep/28</p></div>
+            </a>
+            <div class="button" id="slide-left" style="" onclick="shownext('slide-img','hide-img',-1)"><img
+                    src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt=""></div>
+            <div class="button" id="slide-right" style="" onclick="shownext('slide-img','hide-img',1)"><img
+                    src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt=""></div>
+            <style>#slide-left, #slide-right {
+                margin-top: -24px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                z-index: 100;
+            }
+
+            #slide-right {
+                right: 0;
+            }
             </style>
         </div>
-        <div class="news-group" style="width: 479px;height: 280px;float: left">
-            <div class="news-img" style="padding-left: 6px;"><a href="/4"><img src="./resoure/img/lake.png" alt=""
-                                                                               style="width: 234px;height:132px;"></a>
-            </div>
-            <div class="news-img"><a href="/3"><img src="./resoure/img/mirror.png" alt=""
-                                                    style="width: 234px;height:132px;"></a></div>
-            <div class="news-img" style="padding-left: 6px;margin-top: 6px;"><a href="/2"><img
-                    src="./resoure/img/wave1.png" alt=""
-                    style="width: 234px;height:132px;"></a></div>
-            <div class="news-img" style="margin-top: 6px;"><a href="/1"><img src="./resoure/img/dragoneye.png" alt=""
-                                                                             style="width: 234px;height:132px;"></a>
-            </div>
+        <div class="news-group" style="width: 480px;float: left;">
+
         </div>
     </div>
- </div>
+</div>
 <div class="list-nav">
-
+    <div class="static-wrapper"></div>
 </div>
 </body>
 <script>
-function shownext(cls,aniCls,direction) {
-    var ele = document.getElementsByClassName(cls),
-            curEle = ele[0],
-            nextEle = ele[0],
-            curIndx = -1;
-    console.log(ele);
-    for (var i = 0; i < ele.length; i++) {
-        if (!((' ' + ele[i].className + ' ').indexOf(' ' + aniCls + ' ') > -1)) {
-            curEle = ele[i];
-            curIndx = i;
-            if (direction > 0) {
-                if ((i + 1) < ele.length) {
-                    nextEle = ele[i + 1];
-                    break;
-                } else if ((i + 1) === ele.length) {
-                    curIndx = -1;
-                    break;
-                }
-            } else if (direction < 0) {
-                if (curIndx > 0) {
-                    nextEle = ele[curIndx - 1];
-                    break;
+    function shownext(cls, aniCls, direction) {
+        var ele = document.getElementsByClassName(cls),
+                curEle = ele[0],
+                nextEle = ele[0],
+                curIndx = -1;
+        for (var i = 0; i < ele.length; i++) {
+            if (!((' ' + ele[i].className + ' ').indexOf(' ' + aniCls + ' ') > -1)) {
+                curEle = ele[i];
+                curIndx = i;
+                if (direction > 0) {
+                    if ((i + 1) < ele.length) {
+                        nextEle = ele[i + 1];
+                        break;
+                    } else if ((i + 1) === ele.length) {
+                        curIndx = -1;
+                        break;
+                    }
+                } else if (direction < 0) {
+                    if (curIndx > 0) {
+                        nextEle = ele[curIndx - 1];
+                        break;
+                    }
                 }
             }
         }
-    }
         if (curIndx > -1) {
             $(curEle).addClass(aniCls);
             $(nextEle).removeClass(aniCls);
         }
-}
+    }
 </script>
 </html>
