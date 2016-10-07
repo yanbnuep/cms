@@ -8,7 +8,7 @@
   .slide-img {
     position: absolute;
     height: 270px;
-    overflow: hidden;
+    overflow: visible;
     @include single-transition(all,.2s);
     &.hide-img { visibility: hidden; @include opacity(0);}
   }
@@ -36,20 +36,17 @@
     padding: 10px 5px 0px 10px;
     height: 50px;
     text-align: left;
-    background-color: #312667;
-    @include opacity(1);
-    color: #fafafa;
     font-size: 17px;
     font-weight: 600;
     @include single-transition(all,.2s);
     white-space: nowrap;
     overflow: hidden;
+    clear:left;
   }
 
   & .slide-img .bottom-note {
     position: relative;
     bottom: 0;
-    color: #fafafa;
     font-size: 11px;
     margin-top: 10px;
     line-height: 0;

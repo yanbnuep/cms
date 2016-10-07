@@ -1,8 +1,45 @@
-// Requirements
-// ============
+@import "compass/css3";
 
-@import "compass/utilities/general/clearfix";
+@import "susy";
+@import "compass/reset";
+$susy: (
+  flow: ltr,
+  math: static,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 20px/60px,
+  column-width: 60px,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+.static-container { @include container($susy); }
 
-.row {
-  @include clearfix;
+@for $i from 1 through 12 {
+	@if $i < 12 {
+	   .col-#{$i} {
+			@include span($i);
+       float:left;
+     }
+	}
+    @if $i == 12 {
+		.col-#{$i} {
+			@include span($i);
+		}
+	}
 }
