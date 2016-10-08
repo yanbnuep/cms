@@ -457,44 +457,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 13, ../sass/components/_gallery.scss */
+/* line 22, ../sass/components/_minxins.scss */
+.news-slider .slide-img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 14, ../sass/components/_gallery.scss */
 .news-slider .slide-img.hide-img {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 16, ../sass/components/_gallery.scss */
-.news-slider .button {
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2;
-  cursor: pointer;
-  -moz-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-/* line 26, ../sass/components/_gallery.scss */
-.news-slider:hover .button {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-}
-/* line 28, ../sass/components/_gallery.scss */
-.news-slider:hover .button:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-}
-/* line 31, ../sass/components/_gallery.scss */
+/* line 19, ../sass/components/_gallery.scss */
 .news-slider .slide-img .title {
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   display: block;
   padding: 10px 5px 0px 10px;
   height: 50px;
-  text-align: left;
+  text-align: center;
   font-size: 17px;
   font-weight: 600;
   -moz-transition: all 0.2s;
@@ -504,8 +487,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   white-space: nowrap;
   overflow: hidden;
   clear: left;
+  background-color: #000;
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  text-decoration: none;
 }
-/* line 47, ../sass/components/_gallery.scss */
+/* line 38, ../sass/components/_gallery.scss */
 .news-slider .slide-img .bottom-note {
   position: relative;
   bottom: 0;
@@ -514,8 +502,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 0;
   white-space: nowrap;
 }
+/* line 46, ../sass/components/_gallery.scss */
+.news-slider .slide-button-group {
+  position: relative;
+  display: block;
+  clear: both;
+  z-index: 10010;
+}
+/* line 51, ../sass/components/_gallery.scss */
+.news-slider .slide-button-group .slide-button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+/* line 60, ../sass/components/_gallery.scss */
+.news-slider .slide-button-group .slide-button:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 62, ../sass/components/_gallery.scss */
+.news-slider .slide-button-group .slide-dot {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-align: center;
+  background-color: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
 
-/* line 57, ../sass/components/_gallery.scss */
+/* line 73, ../sass/components/_gallery.scss */
 .news-group {
   position: relative;
   display: inline-block;
@@ -524,7 +553,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
 }
-/* line 61, ../sass/components/_gallery.scss */
+/* line 76, ../sass/components/_gallery.scss */
 .news-group .news-img {
   line-height: 0;
   display: inline-block;
@@ -534,7 +563,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *display: inline;
   *float: left;
 }
-/* line 66, ../sass/components/_gallery.scss */
+/* line 81, ../sass/components/_gallery.scss */
 .news-group .news-img {
   display: inline-block;
   vertical-align: middle;

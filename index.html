@@ -1,140 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Intranet</title>
     <link rel="stylesheet" href="./stylesheets/cms.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="resoure/javascript/jquery1113.js"></script>
     <scirpt src="./resource/javascript/slideshow.js"></scirpt>
 </head>
+
 <body>
-<div class="nav" style="width: 100%; height: 54px;padding: 0 24px;">
-    <div class="fluid-wrapper">
-        <div class="banner" style="padding-top: 12.5px;"><a href="/"
-                                                            style="display: block;width: 120px;height:35px;background:transparent url('./resoure/logo/logo.svg') no-repeat scroll 0 0/100%;"></a>
-        </div>
-        <ul class="nav-list">
-            <li class="nav-list-items" style="margin-left: 15px;"><a href="">Main</a></li>
-            <li class="nav-list-items"><a href="">Phone</a></li>
-            <li class="nav-list-items"><a href="">Phone</a></li>
-            <li class="nav-list-items has-dropdown"><a href="">Services</a>
-                <ul class="nav-dropdown-list z-depth-3" style="top: 55px;">
-                    <li class="dropdown-list-items"><a href="">Inventory Control</a></li>
-                    <li class="dropdown-list-items"><a href="">Email For Outstation</a></li>
-                    <li class="dropdown-list-items"><a href="">Infor For Expatriate Staff</a></li>
-                    <li class="dropdown-list-items"><a href="">CCD Marking System</a></li>
-                    <li class="dropdown-list-items"><a href="">AMASIS Remote Access</a></li>
-                    <style>.dropdown-list-items a {
-                        line-height: 40px;
-                    }</style>
-                </ul>
-            </li>
-            <li class="nav-list-items"><a href="">Download</a></li>
-            <li class="nav-list-items"><a href="">Links</a></li>
-        </ul>
-        <div class="nav-right" style="float: right;">
-            <div class="cms-form" style="display: inline-block;margin: 12px 20px 0 5px">
-                <form action=""><input placeholder="Search" type="text" class="cms-input"
-                                       style="height: 34px;background-color: #f7f7f7"></form>
+    <div class="nav" style="width: 100%; height: 54px;padding: 0 24px;">
+        <div class="fluid-wrapper">
+            <div class="banner" style="padding-top: 12.5px;">
+                <a href="/" style="display: block;width: 120px;height:35px;background:transparent url('./resoure/logo/logo.svg') no-repeat scroll 0 0/100%;"></a>
             </div>
-            <div class="cms-btn-group">
-                <a class="cms-btn"><i id="email-login-icon" class="material-icons"
-                                      style="color: #4285f4;padding: 0 5px;">&#xE0BE;</i></a>
-                <a class="cms-btn"><i id="user-login-icon" class="material-icons"
-                                      style="width: 30px;font-size: 30px;margin:0 16px 0 8px;">&#xE853;</i></a></div>
+            <ul class="nav-list">
+                <li class="nav-list-items" style="margin-left: 15px;"><a href="">Main</a></li>
+                <li class="nav-list-items"><a href="">Phone</a></li>
+                <li class="nav-list-items"><a href="">Phone</a></li>
+                <li class="nav-list-items has-dropdown"><a href="">Services</a>
+                    <ul class="nav-dropdown-list z-depth-3" style="top: 55px;">
+                        <li class="dropdown-list-items"><a href="">Inventory Control</a></li>
+                        <li class="dropdown-list-items"><a href="">Email For Outstation</a></li>
+                        <li class="dropdown-list-items"><a href="">Infor For Expatriate Staff</a></li>
+                        <li class="dropdown-list-items"><a href="">CCD Marking System</a></li>
+                        <li class="dropdown-list-items"><a href="">AMASIS Remote Access</a></li>
+                        <style>
+                        .dropdown-list-items a {
+                            line-height: 40px;
+                        }
+                        </style>
+                    </ul>
+                </li>
+                <li class="nav-list-items"><a href="">Download</a></li>
+                <li class="nav-list-items"><a href="">Links</a></li>
+            </ul>
+            <div class="nav-right" style="float: right;">
+                <div class="cms-form" style="display: inline-block;margin: 12px 20px 0 5px">
+                    <form action="">
+                        <input placeholder="Search" type="text" class="cms-input" style="height: 34px;background-color: #f7f7f7">
+                    </form>
+                </div>
+                <div class="cms-btn-group">
+                    <a class="cms-btn"><i id="email-login-icon" class="material-icons"
+                      style="color: #4285f4;padding: 0 5px;">&#xE0BE;</i></a>
+                    <a class="cms-btn"><i id="user-login-icon" class="material-icons"
+                          style="width: 30px;font-size: 30px;margin:0 16px 0 8px;">&#xE853;</i></a></div>
+            </div>
         </div>
     </div>
-</div>
-<style>
+    <style>
     .nav-list-items {
         line-height: 54px;
     }
-
-    #email-login-icon, #user-login-icon {
+    
+    #email-login-icon,
+    #user-login-icon {
         line-height: 54px;
     }
-</style>
-<div id="news-gallery" style="background-color: #fff;height: 300px;top: 0;position: relative;margin-top:20px;">
-    <div class="static-wrapper">
-        <div class="news-slider" style="width: 480px;height: auto;float: left">
-            <div  class="slide-img hide-img"><a href=""><img src="./resoure/img/mirror.png" alt=""></a>
-                <div
-                        class="title"><span class="main-title">Woman In Mirorr</span>
-                    <p class="bottom-note">2016/Sep/28</p></div>
-            </div>
-            <div class="slide-img "><a href=""><img src="./resoure/img/lake.png" alt=""></a>
-                <div
-                        class="title"><span class="main-title">The Lake</span>
-                    <p class="bottom-note">2016/Sep/28</p></div>
-            </div>
-            <div  class="slide-img hide-img"><a href=""><img src="./resoure/img/wave1.png" alt=""></a>
-                <div
-                        class="title"><span class="main-title">Sea Wave</span>
-                    <p class="bottom-note">2016/Sep/28</p></div>
-            </div>
-            <div class="slide-img hide-img"><a href=""><img src="./resoure/img/dragoneye.png" alt=""></a>
-                <div
-                        class="title"><span class="main-title">The Dragon's Eye</span>
-                    <p class="bottom-note">2016/Sep/28</p></div>
-            </div>
-            <div class="button" id="slide-left" style="" onclick="shownext('slide-img','hide-img',-1)"><img
-                    src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt=""></div>
-            <div class="button" id="slide-right" style="" onclick="shownext('slide-img','hide-img',1)"><img
-                    src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt=""></div>
-            <style>#slide-left, #slide-right {
-                margin-top: -24px;
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                z-index: 100;
-            }
+    </style>
+    <div id="news-gallery" style="background-color: #fff;height: 300px;top: 0;position: relative;margin-top:20px;">
+        <div class="static-wrapper">
+            <div class="news-slider" style="width: 480px;height: auto;float: left">
+                <a href="" class="slide-img hide-img"><img src="./resoure/img/mirror.png" alt="">
+                    <div class="title"><span class="main-title">Woman In Mirorr</span>
+                        <p class="bottom-note">2016/Sep/28</p>
+                    </div>
+                </a>
+                <a href="" class="slide-img"><img src="./resoure/img/lake.png" alt="">
+                    <div class="title"><span class="main-title">NX Inaugural Ceremony of Macau - Guiyang</span>
+                        <p class="bottom-note">2016/Sep/28</p>
+                    </div>
+                </a>
+                <a href="" class="slide-img hide-img"><img src="./resoure/img/wave1.png" alt="">
+                    <div class="title"><span class="main-title">Sea Wave</span>
+                        <p class="bottom-note">2016/Sep/28</p>
+                    </div>
+                </a>
+                <a href="" class="slide-img hide-img"><img src="./resoure/img/dragoneye.png" alt="">
+                    <div class="title"><span class="main-title">The Dragon's Eye</span>
+                        <p class="bottom-note">2016/Sep/28</p>
+                    </div>
+                </a>
+                <div class="slide-button-group" style="margin-top: 117.5px;">
+                    <div class="slide-button" id="slide-left" onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt="" style="height: 35px;"></div>
 
-            #slide-right {
-                right: 0;
-            }
-            </style>
-        </div>
-        <div class="news-group" style="width: 480px;float: left;">
-
+                    <div class="slide-button" id="slide-right" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt="" style="height: 35px;"></div>
+                    <style>
+                        #slide-left{left:5px;}#slide-right{float: right;right:5px;}
+                    </style>
+                </div>
+            </div>
+            <div class="news-group" style="width: 480px;float: left;">
+            </div>
         </div>
     </div>
-</div>
-<div class="list-nav">
-    <div class="static-wrapper"></div>
-</div>
+    <div class="list-nav">
+        <div class="static-wrapper"></div>
+    </div>
 </body>
 <script>
-    function shownext(cls, aniCls, direction) {
-        var ele = document.getElementsByClassName(cls),
-                curEle = ele[0],
-                nextEle = ele[0],
-                curIndx = -1;
-        for (var i = 0; i < ele.length; i++) {
-            if (!((' ' + ele[i].className + ' ').indexOf(' ' + aniCls + ' ') > -1)) {
-                curEle = ele[i];
-                curIndx = i;
-                if (direction > 0) {
-                    if ((i + 1) < ele.length) {
-                        nextEle = ele[i + 1];
-                        break;
-                    } else if ((i + 1) === ele.length) {
-                        curIndx = -1;
-                        break;
-                    }
-                } else if (direction < 0) {
-                    if (curIndx > 0) {
-                        nextEle = ele[curIndx - 1];
-                        break;
-                    }
+function shownext(cls, aniCls, direction) {
+    var ele = document.getElementsByClassName(cls),
+        curEle = ele[0],
+        nextEle = ele[0],
+        curIndx = -1;
+    for (var i = 0; i < ele.length; i++) {
+        if (!((' ' + ele[i].className + ' ').indexOf(' ' + aniCls + ' ') > -1)) {
+            curEle = ele[i];
+            curIndx = i;
+            if (direction > 0) {
+                if ((i + 1) < ele.length) {
+                    nextEle = ele[i + 1];
+                    break;
+                } else if ((i + 1) === ele.length) {
+                    curIndx = -1;
+                    break;
+                }
+            } else if (direction < 0) {
+                if (curIndx > 0) {
+                    nextEle = ele[curIndx - 1];
+                    break;
                 }
             }
         }
-        if (curIndx > -1) {
-            $(curEle).addClass(aniCls);
-            $(nextEle).removeClass(aniCls);
-        }
     }
+    if (curIndx > -1) {
+        $(curEle).addClass(aniCls);
+        $(nextEle).removeClass(aniCls);
+    }
+}
 </script>
+
 </html>

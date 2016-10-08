@@ -3,69 +3,84 @@
 @import "compass/css3/opacity";
 @import "compass/css3/transition";
 .news-slider {
-  position: relative;
-  @include inline-block;
-  .slide-img {
-    position: absolute;
-    height: 270px;
-    overflow: visible;
-    @include single-transition(all,.2s);
-    &.hide-img { visibility: hidden; @include opacity(0);}
-  }
-
-  & .button {
-    position: absolute;
-    top: 50%;
-    background-color: #ffffff;
-    @include opacity(.2);
-    cursor: pointer;
-    @include  single-transition(all,.1s);
-
-  }
-
-  &:hover .button {
-    @include opacity(.5);
-    &:hover {@include opacity(.9);}
-  }
-
-  & .slide-img .title {
     position: relative;
-    top: 0;
-    width: 100%;
-    display: block;
-    padding: 10px 5px 0px 10px;
-    height: 50px;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 600;
-    @include single-transition(all,.2s);
-    white-space: nowrap;
-    overflow: hidden;
-    clear:left;
-  }
-
-  & .slide-img .bottom-note {
-    position: relative;
-    bottom: 0;
-    font-size: 11px;
-    margin-top: 10px;
-    line-height: 0;
-    white-space: nowrap;
-  }
+    @include inline-block;
+    .slide-img {
+        position: absolute;
+        height: 270px;
+        @include clearfix();
+        overflow: visible;
+        @include single-transition(all, .2s);
+        &.hide-img {
+            visibility: hidden;
+            @include opacity(0);
+        }
+    }
+    & .slide-img .title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        padding: 10px 5px 0px 10px;
+        height: 50px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        @include single-transition(all, .2s);
+        white-space: nowrap;
+        overflow: hidden;
+        clear: left;
+        background-color: #000;
+        color: #fff;
+        @include opacity(.7);
+        text-decoration: none;
+    }
+    & .slide-img .bottom-note {
+        position: relative;
+        bottom: 0;
+        font-size: 11px;
+        margin-top: 10px;
+        line-height: 0;
+        white-space: nowrap;
+    }
+    & .slide-button-group {
+        position: relative;
+        display: block;
+        clear: both;
+        z-index: 10010;
+        & .slide-button {
+            position: relative;
+            @include inline-block();
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            background-color: #fff;
+            @include opacity(.2);
+            &:hover {@include opacity(.7);}
+        }
+        & .slide-dot {
+          @include inline-block();
+          text-align: center;
+          background-color: #ccc;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+        }
+    }
 }
 
 .news-group {
-  position: relative;
-  @include inline-block;
-
-  .news-img {
-    line-height:0;
+    position: relative;
     @include inline-block;
-    *float: left;
-  }
-  & .news-img {
-    @include inline-block();
-    float: left;
-    margin-left: 6px;
-  }
+    .news-img {
+        line-height: 0;
+        @include inline-block;
+        *float: left;
+    }
+    & .news-img {
+        @include inline-block();
+        float: left;
+        margin-left: 6px;
+    }
 }
