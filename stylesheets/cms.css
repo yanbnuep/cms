@@ -83,6 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -91,6 +92,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -99,6 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -107,6 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -115,6 +119,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -123,6 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -131,6 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -139,6 +146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -147,6 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -155,6 +164,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
 /* line 35, ../sass/components/_grids.scss */
@@ -163,9 +173,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 20px;
   float: left;
+  min-height: 1px;
 }
 
-/* line 41, ../sass/components/_grids.scss */
+/* line 42, ../sass/components/_grids.scss */
 .col-12 {
   width: 940px;
   float: left;
@@ -538,7 +549,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
   text-align: center;
-  background-color: #ccc;
+  background-color: #d6d6d6;
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -572,4 +583,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *display: inline;
   float: left;
   margin-left: 6px;
+}
+
+/* line 1, ../sass/components/_list.scss */
+.list-vertical {
+  position: relative;
+}
+/* line 3, ../sass/components/_list.scss */
+.list-vertical .list {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  margin-left: 15px;
+  padding-top: 10px;
+  float: left;
+}
+/* line 11, ../sass/components/_list.scss */
+.list-vertical .list a .date {
+  display: block;
+  clear: both;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 18, ../sass/components/_list.scss */
+.list-vertical a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+}
+/* line 24, ../sass/components/_list.scss */
+.list-vertical .border {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
 }

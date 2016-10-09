@@ -35,6 +35,7 @@ $susy: (
 	   .col-#{$i} {
 			@include span($i);
        float:left;
+       min-height: 1px;
      }
 	}
     @if $i == 12 {

@@ -61,7 +61,7 @@
         line-height: 54px;
     }
     </style>
-    <div id="news-gallery" style="background-color: #fff;height: 300px;top: 0;position: relative;margin-top:20px;">
+    <div id="news-gallery" style="background-color: #fff;top: 0;position: relative;margin-top:20px;">
         <div class="static-wrapper">
             <div class="news-slider" style="width: 480px;height: auto;float: left">
                 <a href="" class="slide-img hide-img"><img src="./resoure/img/mirror.png" alt="">
@@ -86,19 +86,80 @@
                 </a>
                 <div class="slide-button-group" style="margin-top: 117.5px;">
                     <div class="slide-button" id="slide-left" onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt="" style="height: 35px;"></div>
-
                     <div class="slide-button" id="slide-right" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt="" style="height: 35px;"></div>
                     <style>
-                        #slide-left{left:5px;}#slide-right{float: right;right:5px;}
+                    #slide-left {
+                        left: 5px;
+                    }
+                    
+                    #slide-right {
+                        float: right;
+                        right: 5px;
+                    }
                     </style>
                 </div>
+                <div class="slide-button-group" style="text-align: center;margin-top: 117.5px;">
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
+                </div>
             </div>
-            <div class="news-group" style="width: 480px;float: left;">
+            <div class="news-group" style="width: 480px;float: left;overflow: hidden;">
+                <ul class="list-vertical" id="news-ul-list-1">
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">心系乘客 眾志成城<span class="date">30/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">Company Orientation<span class="date">30/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">  
+new_index_icon.gif (882 bytes) Let's Welcome Our First Batch of Air Macau Local Cadet Pilots<span class="date">27/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">Train The Trainers Workshop<span class="date">27/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">Air Macau Inaugural Ceremony of Macau – Guiyang Route<span class="date">23/9/2016</span></a></li>
+                    <style>
+                    #news-ul-list-1.list-vertical {
+                        width: 220px;
+                        float: left;
+                    }
+                    </style>
+                </ul>
+                <ul class="list-vertical" id="news-ul-list-2">
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title"> Professional Coaching Techniques Workshop<span class="date"> 30 Aug 2016   2/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">Company Orientation<span class="date">30/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">  
+new_index_icon.gif (882 bytes) Let's Welcome Our First Batch of Air Macau Local Cadet Pilots<span class="date">27/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title">Train The Trainers Workshop<span class="date">27/9/2016</span></a></li>
+                    <li class="list">
+                        <div class="border"></div><a href="" class="title" id="readMore">Read  More</a></li>
+                    <style>
+                    #news-ul-list-2.list-vertical {
+                        width: 220px;
+                        float: left;
+                    }
+                    
+                    .list #readMore {
+                        color: #FF5443;
+                        cursor: pointer;
+                        font: 700 12px Georgia;
+                    }
+                    </style>
+                </ul>
             </div>
         </div>
     </div>
     <div class="list-nav">
-        <div class="static-wrapper"></div>
+        <div class="static-wrapper">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+        </div>
     </div>
 </body>
 <script>

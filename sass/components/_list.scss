@@ -1,0 +1,32 @@
+.list-vertical {
+	position: relative;
+	& .list{
+		position: relative;
+		display: block;
+		margin-bottom: 16px;
+		margin-left: 15px;
+		padding-top: 10px;
+		float:left;
+		
+		& a .date {
+			display: block;
+			clear: both;
+			font-size: 12px;
+			font-weight: normal;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-size: 13px;
+		color: #000;
+		font-weight: bold;
+	}
+	.border {
+		position: absolute;
+		top: 0;
+		display: block;
+		height: 0;
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+	}
+}
