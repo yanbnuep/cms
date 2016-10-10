@@ -84,21 +84,27 @@
                         <p class="bottom-note">2016/Sep/28</p>
                     </div>
                 </a>
-                <div class="slide-button-group" style="margin-top: 117.5px;">
-                    <div class="slide-button" id="slide-left" onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt="" style="height: 35px;"></div>
-                    <div class="slide-button" id="slide-right" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt="" style="height: 35px;"></div>
-                    <style>
-                    #slide-left {
-                        left: 5px;
-                    }
-                    
-                    #slide-right {
-                        float: right;
-                        right: 5px;
-                    }
-                    </style>
-                </div>
-                <div class="slide-button-group" style="text-align: center;margin-top: 117.5px;">
+                <div class="slide-button" id="slide-left" onclick="shownext('slide-img','hide-img',-1)"><img src="./resoure/logo/ic_keyboard_arrow_left_black_24dp_2x.png" alt="" style="height: 35px;"></div>
+                <div class="slide-button" id="slide-right" onclick="shownext('slide-img','hide-img',1)"><img src="./resoure/logo/ic_keyboard_arrow_right_black_24dp_2x.png" alt="" style="height: 35px;"></div>
+                <style>
+                #slide-left,
+                #slide-right {
+                    position: absolute;
+                    margin-top: 112.5px;
+                    z-index: 200px;
+                }
+                
+                #slide-left {
+                    float: left;
+                    left: 5px;
+                }
+                
+                #slide-right {
+                    float: right;
+                    right: 5px;
+                }
+                </style>
+                <div class="slide-button-group" style="text-align: center;margin-top: 270px;">
                     <span class="slide-dot"></span>
                     <span class="slide-dot"></span>
                     <span class="slide-dot"></span>
@@ -153,12 +159,68 @@ new_index_icon.gif (882 bytes) Let's Welcome Our First Batch of Air Macau Local 
             </div>
         </div>
     </div>
-    <div class="list-nav">
-        <div class="static-wrapper">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+    <div class="list-nav" style="background-color: #f5f5f5;margin-top: 25px;">
+        <div class="static-wrapper" style="padding-top: 15px;">
+            <div class="col-3">
+                <h4>C - D</h4>
+                <ul>
+                    <li><a href="">Centralized Operational Manual</a></li>
+                    <li><a href="">Corporate Quality</a></li>
+                    <li><a href="">Conference Room Booking</a></li>
+                    <li><a href="">DMS</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>E - F</h4>
+                <ul>
+                    <li><a href="">EHR</a></li>
+                    <li><a href="">E-Log</a></li>
+                    <li><a href="">Flight Schedule</a></li>
+                    <li><a href="">Flight Information Board</a></li>
+                    <li><a href="">Flight OPS Manual</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>I - S - T - O</h4>
+                <ul>
+                    <li><a href="">ILearning</a></li>
+                    <li><a href="">Safety Zone</a></li>
+                    <li><a href="">SAMS</a></li>
+                    <li><a href="">Trainning Information</a></li>
+                    <li><a href="">OA</a></li>
+                </ul>
+            </div>
+            <script>
+            $(function() {
+                $(".list-nav a").hover(
+                    function() {
+                        $(this).animate({
+
+                        }, 500, function() {});
+                    }
+                )
+            });
+            </script>
+            <div class="col-3">
+                <form action="" id="ESLogin" class="form-normal form-vertical">
+                    <div class="form-title">E-Service</div>
+                    <div class="input-group">
+                        <label for="">User</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Password</label>
+                        <input type="text">
+                    </div>
+                    <div class="options">
+                        <a href="" id="change">Change PSD</a>
+                        <a href="" id="submit">Go</a>
+                    </div>
+                    <style>
+
+                    </style>
+                </form>
+            </div>
         </div>
     </div>
 </body>

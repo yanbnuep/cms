@@ -12,6 +12,7 @@
   @include single-box-shadow(0, 2px, 5px, 0, rgba(0, 0, 0, 0.15));
   @include clearfix;
   overflow: visible;
+  z-index: 200;
   & a {
     text-decoration: none;
   }
@@ -53,7 +54,7 @@
       margin-left: -100px;
       width: 200px;
       background-color: #fff;
-      z-index:999;
+      z-index:500;
       list-style: none;
       @include box-shadow(rgba(black,.16) 0 0 13px);
       &:after {

@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
-/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../compass.app/lib/ruby/compass_extensions/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .static-container:after {
   content: " ";
   display: block;
@@ -323,6 +323,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   overflow: visible;
+  z-index: 200;
 }
 /* line 22, ../sass/components/_minxins.scss */
 .nav:after {
@@ -330,17 +331,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: table;
   clear: both;
 }
-/* line 15, ../sass/components/_navbar.scss */
+/* line 16, ../sass/components/_navbar.scss */
 .nav a {
   text-decoration: none;
 }
-/* line 19, ../sass/components/_navbar.scss */
+/* line 20, ../sass/components/_navbar.scss */
 .nav .banner {
   position: relative;
   float: left;
   clear: both;
 }
-/* line 24, ../sass/components/_navbar.scss */
+/* line 25, ../sass/components/_navbar.scss */
 .nav .nav-list {
   position: relative;
   list-style: none;
@@ -357,20 +358,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: table;
   clear: both;
 }
-/* line 30, ../sass/components/_navbar.scss */
+/* line 31, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-list-items {
   position: relative;
   float: left;
 }
-/* line 33, ../sass/components/_navbar.scss */
+/* line 34, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-list-items:hover {
   background-color: rgba(200, 200, 200, 0.2);
 }
-/* line 35, ../sass/components/_navbar.scss */
+/* line 36, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-list-items:hover > .nav-dropdown-list {
   display: block;
 }
-/* line 37, ../sass/components/_navbar.scss */
+/* line 38, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-list-items a {
   display: block;
   padding: 0 12.5px;
@@ -378,11 +379,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #444;
   font-weight: 700;
 }
-/* line 43, ../sass/components/_navbar.scss */
+/* line 44, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-list-items a:hover {
   background-color: rgba(200, 200, 200, 0.2);
 }
-/* line 49, ../sass/components/_navbar.scss */
+/* line 50, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-dropdown-list {
   position: absolute;
   display: none;
@@ -390,13 +391,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: -100px;
   width: 200px;
   background-color: #fff;
-  z-index: 999;
+  z-index: 500;
   list-style: none;
   -moz-box-shadow: rgba(0, 0, 0, 0.16) 0 0 13px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 0 13px;
   box-shadow: rgba(0, 0, 0, 0.16) 0 0 13px;
 }
-/* line 59, ../sass/components/_navbar.scss */
+/* line 60, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-dropdown-list:after {
   border-bottom: 10px solid #fff;
   border-top: none;
@@ -411,14 +412,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   width: 0;
 }
-/* line 74, ../sass/components/_navbar.scss */
+/* line 75, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-dropdown-list .dropdown-list-items {
   position: relative;
   float: none;
   display: list-item;
   text-align: -webkit-match-parent;
 }
-/* line 79, ../sass/components/_navbar.scss */
+/* line 80, ../sass/components/_navbar.scss */
 .nav .nav-list .nav-dropdown-list .dropdown-list-items a {
   position: relative;
   float: none;
@@ -443,9 +444,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #f7f7f7 !important;
 }
 
-/* line 1, ../sass/components/_form.scss */
-.cms-form {
+/* line 2, ../sass/components/_form.scss */
+.form-normal {
   position: relative;
+  display: block;
+  *zoom: 1;
+  background-color: transparent;
+}
+/* line 38, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.form-normal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 7, ../sass/components/_form.scss */
+.form-normal a {
+  font-family: Roboto;
+}
+/* line 10, ../sass/components/_form.scss */
+.form-normal .input-group {
+  margin-top: 10px;
+}
+/* line 13, ../sass/components/_form.scss */
+.form-normal label {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 17, ../sass/components/_form.scss */
+.form-normal input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ddd;
+  color: #000;
+  padding: 5px 10px;
+}
+/* line 23, ../sass/components/_form.scss */
+.form-normal input:focus {
+  background-color: #fafafa;
+  border: 1px solid #000;
+}
+
+/* line 31, ../sass/components/_form.scss */
+.form-vertical .input-group {
+  display: block;
+}
+/* line 33, ../sass/components/_form.scss */
+.form-vertical .input-group label, .form-vertical .input-group input {
   display: block;
 }
 
@@ -462,17 +506,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .news-slider .slide-img {
   position: absolute;
   height: 270px;
+  overflow: hidden;
+  *zoom: 1;
   overflow: visible;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-/* line 22, ../sass/components/_minxins.scss */
-.news-slider .slide-img:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 14, ../sass/components/_gallery.scss */
 .news-slider .slide-img.hide-img {
@@ -518,10 +558,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   display: block;
   clear: both;
-  z-index: 10010;
+  z-index: 100;
 }
-/* line 51, ../sass/components/_gallery.scss */
-.news-slider .slide-button-group .slide-button {
+/* line 52, ../sass/components/_gallery.scss */
+.news-slider .slide-button {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -536,13 +576,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 60, ../sass/components/_gallery.scss */
-.news-slider .slide-button-group .slide-button:hover {
+/* line 61, ../sass/components/_gallery.scss */
+.news-slider .slide-button:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 62, ../sass/components/_gallery.scss */
-.news-slider .slide-button-group .slide-dot {
+/* line 65, ../sass/components/_gallery.scss */
+.news-slider .slide-dot {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -555,7 +595,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 10px;
 }
 
-/* line 73, ../sass/components/_gallery.scss */
+/* line 75, ../sass/components/_gallery.scss */
 .news-group {
   position: relative;
   display: inline-block;
@@ -564,7 +604,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
 }
-/* line 76, ../sass/components/_gallery.scss */
+/* line 78, ../sass/components/_gallery.scss */
 .news-group .news-img {
   line-height: 0;
   display: inline-block;
@@ -574,7 +614,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *display: inline;
   *float: left;
 }
-/* line 81, ../sass/components/_gallery.scss */
+/* line 83, ../sass/components/_gallery.scss */
 .news-group .news-img {
   display: inline-block;
   vertical-align: middle;
@@ -585,11 +625,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 6px;
 }
 
-/* line 1, ../sass/components/_list.scss */
+/* line 2, ../sass/components/_list.scss */
 .list-vertical {
   position: relative;
 }
-/* line 3, ../sass/components/_list.scss */
+/* line 4, ../sass/components/_list.scss */
 .list-vertical .list {
   position: relative;
   display: block;
@@ -598,21 +638,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 10px;
   float: left;
 }
-/* line 11, ../sass/components/_list.scss */
+/* line 12, ../sass/components/_list.scss */
 .list-vertical .list a .date {
   display: block;
   clear: both;
   font-size: 12px;
   font-weight: normal;
 }
-/* line 18, ../sass/components/_list.scss */
+/* line 19, ../sass/components/_list.scss */
 .list-vertical a {
   text-decoration: none;
   font-size: 13px;
   color: #000;
   font-weight: bold;
 }
-/* line 24, ../sass/components/_list.scss */
+/* line 25, ../sass/components/_list.scss */
 .list-vertical .border {
   position: absolute;
   top: 0;
@@ -620,4 +660,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 0;
   width: 100%;
   border-bottom: 1px solid #ccc;
+}
+
+/* line 37, ../sass/components/_list.scss */
+.list-nav a {
+  text-decoration: none;
+  color: #212121;
+}
+/* line 41, ../sass/components/_list.scss */
+.list-nav h1, .list-nav h2, .list-nav h3, .list-nav h4 {
+  font-family: Roboto;
+  color: #15c;
+  font-weight: bold;
+  margin-left: 3px;
+  padding-bottom: 10px;
+}
+/* line 48, ../sass/components/_list.scss */
+.list-nav ul li {
+  padding-bottom: 10px;
+}
+/* line 51, ../sass/components/_list.scss */
+.list-nav ul li a {
+  display: block;
+  padding: 3px 0 3px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  -moz-transition: all 0.2;
+  -o-transition: all 0.2;
+  -webkit-transition: all 0.2;
+  transition: all 0.2;
+}
+/* line 56, ../sass/components/_list.scss */
+.list-nav ul li a:hover {
+  background-color: #999;
+  color: #fafafa;
 }

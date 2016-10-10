@@ -47,26 +47,28 @@
         position: relative;
         display: block;
         clear: both;
-        z-index: 10010;
-        & .slide-button {
-            position: relative;
-            @include inline-block();
-            cursor: pointer;
-            width: 35px;
-            height: 35px;
-            border-radius: 35px;
-            background-color: #fff;
-            @include opacity(.2);
-            &:hover {@include opacity(.7);}
+        z-index: 100;
+    }
+    .slide-button {
+        position: relative;
+        @include inline-block();
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        background-color: #fff;
+        @include opacity(.2);
+        &:hover {
+            @include opacity(.7);
         }
-        & .slide-dot {
-          @include inline-block();
-          text-align: center;
-          background-color: #d6d6d6;
-          width: 10px;
-          height: 10px;
-          border-radius: 10px;
-        }
+    }
+    .slide-dot {
+        @include inline-block();
+        text-align: center;
+        background-color: #d6d6d6;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
     }
 }
 
