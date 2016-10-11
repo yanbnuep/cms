@@ -1,0 +1,54 @@
+.datepicker {
+    position: relative;
+    display: block;
+    & .ui-datepicker {
+        & .ui-datepicker-header {
+        	height: 40px;
+            & .ui-corner-all {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin-top: 10px;
+                overflow: hidden;
+                & span {
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    color: transparent;
+                }
+            }
+            & .ui-datepicker-prev {
+                left: 0;
+                &>span {
+                    background-image: url(../resoure/logo/ic_keyboard_arrow_left_black_24dp_1x.png);
+                }
+            }
+            & .ui-datepicker-next {
+                right: 0;
+                &>span {
+                    background-image: url(../resoure/logo/ic_keyboard_arrow_right_black_24dp_1x.png);
+                }
+                ;
+            }
+            & .ui-datepicker-title {
+                position: relative;
+                display: block;
+                font-weight: 600;
+                text-align: center;
+                & span {
+                	line-height: 40px;
+                }
+            }
+        }
+        .ui-datepicker-calendar {
+            margin: 0 auto;
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            & thead tr {text-align: center;}
+			& td {
+				text-align: center;
+				a {text-decoration: none;}
+			}
+        }
+    }
+}
