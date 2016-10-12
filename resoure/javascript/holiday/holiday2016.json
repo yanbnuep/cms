@@ -1,0 +1,59 @@
+{
+    "holiday2016": {
+        "MFM": [{
+                "title": "New Year Day",
+                "date": "1/1/2016",
+                "PH": false
+            }, {
+                "title": "1st of Lunar New Year",
+                "date": "8/2/2016",
+                "PH": false
+            }, {
+                "title": "2nd of Lunar New Year",
+                "date": "9/2/2016",
+                "PH": false
+            }, {
+                "title": "3nd of Lunar New Year",
+                "date": "10/2/2016",
+                "PH": false
+            }, {
+                "title": "Good Friday (Easter)",
+                "date": "25/3/2016",
+                "PH": false
+            }, {
+                "title": "Ching Ming Festival",
+                "date": "4/4/2016",
+                "PH": false
+            }, {
+                "title": "Labor Day",
+                "date": "1/5/2016",
+                "PH": false
+            }, {
+                "title": "Day off-in-lieu for PH of the Labor Day falling on a Sunday",
+                "date": "2/5/2016",
+                "PH": true
+            }, {
+                "title": "The Buddha's Birthday",
+                "date": "14/5/2016",
+                "PH": false
+            }, {
+                "title": "Day off-in-lieu for PH of the Buddha's Birthday falling on a Saturday",
+                "date": "16/5/2016",
+                "PH": true
+            }, {
+                "title": "Dragon Boat Festival",
+                "date": "9/6/2016",
+                "PH": false
+            }, {
+                "title": "The day following Mid-Autumn Festival",
+                "date": "16/9/2016",
+                "PH": false
+            }, {
+                "title": "PRC National Day",
+                "date": "1/10/2016",
+                "PH": false
+            }
+
+        ]
+    }
+}
