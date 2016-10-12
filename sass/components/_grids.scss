@@ -1,5 +1,5 @@
 @import "compass/css3";
-
+@import "compass/utilities/general/clearfix";
 @import "susy";
 @import "compass/reset";
 $susy: (
@@ -35,7 +35,7 @@ $susy: (
 	   .col-#{$i} {
 			@include span($i);
        float:left;
-       min-height: 1px;
+      
      }
 	}
     @if $i == 12 {
@@ -43,4 +43,5 @@ $susy: (
 			@include span($i);
 		}
 	}
+  .col-#{$i}{ min-height: 1px;}
 }
