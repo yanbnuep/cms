@@ -505,12 +505,13 @@ body {
 .datepicker {
   position: relative;
   display: block;
+  overflow: hidden;
 }
-/* line 5, ../sass/components/_datepicker.scss */
+/* line 6, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header {
   height: 40px;
 }
-/* line 7, ../sass/components/_datepicker.scss */
+/* line 8, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header .ui-corner-all {
   position: absolute;
   width: 20px;
@@ -521,17 +522,17 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 17, ../sass/components/_datepicker.scss */
+/* line 18, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
   left: 0;
   background: url(../resoure/logo/ic_keyboard_arrow_left_black_24dp_1x.png) 0 0 no-repeat;
 }
-/* line 21, ../sass/components/_datepicker.scss */
+/* line 22, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
   right: 5px;
   background: url(../resoure/logo/ic_keyboard_arrow_right_black_24dp_1x.png) 0 0 no-repeat;
 }
-/* line 25, ../sass/components/_datepicker.scss */
+/* line 26, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
   position: relative;
   margin: 0 30px;
@@ -539,63 +540,95 @@ body {
   font-weight: 600;
   text-align: center;
 }
-/* line 31, ../sass/components/_datepicker.scss */
+/* line 32, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-title span {
   font-size: 15px;
   line-height: 40px;
 }
-/* line 37, ../sass/components/_datepicker.scss */
+/* line 38, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-calendar {
   margin: 0 auto;
   width: 100%;
   border-collapse: collapse;
   text-align: center;
 }
-/* line 42, ../sass/components/_datepicker.scss */
+/* line 43, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-calendar thead tr th {
-  padding: 10px 0;
-  text-align: center;
-}
-/* line 46, ../sass/components/_datepicker.scss */
-.datepicker .ui-datepicker .ui-datepicker-calendar td {
+  padding: 5px 0;
+  font-size: 14px;
   text-align: center;
 }
 /* line 48, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td {
+  text-align: center;
+}
+/* line 50, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-calendar td a {
   text-decoration: none;
 }
-/* line 51, ../sass/components/_datepicker.scss */
+/* line 53, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-calendar td span.ui-state-default {
   color: #ccc;
+  font-size: 13px;
+  font-weight: 400;
 }
-/* line 54, ../sass/components/_datepicker.scss */
+/* line 58, ../sass/components/_datepicker.scss */
 .datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default {
   display: inline-block;
   height: 24px;
   width: 24px;
-  left: 15px;
+  left: 12px;
   border-radius: 12px;
   color: #000;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 24px;
   background: none;
   transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
-/* line 66, ../sass/components/_datepicker.scss */
-.datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default:hover {
+/* line 70, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default:hover, .datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight:hover {
   background-color: #1E88E5;
   color: #fafafa;
 }
+/* line 75, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default.select {
+  color: #fafafa;
+  background-color: #A9E2FF;
+}
+/* line 79, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight {
+  color: #1E88E5;
+}
+/* line 85, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td.holiday a.ui-state-default {
+  color: #EF6755;
+}
+/* line 87, ../sass/components/_datepicker.scss */
+.datepicker .ui-datepicker .ui-datepicker-calendar td.holiday a.ui-state-default:hover {
+  color: #fafafa;
+}
 
-/* line 76, ../sass/components/_datepicker.scss */
+/* line 96, ../sass/components/_datepicker.scss */
 .dateShow {
   position: relative;
   display: block;
-  color: #fafafa;
   background-color: #1976D2;
+  color: #fafafa;
+  font-weight: 500;
   /*border protect div from collapse*/
   border-top: 1px solid transparent;
+}
+/* line 104, ../sass/components/_datepicker.scss */
+.dateShow .year {
+  padding: 3px 2px;
+  font-size: 14px;
+}
+/* line 108, ../sass/components/_datepicker.scss */
+.dateShow .date {
+  padding: 2px 0 5px 2px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* line 2, ../sass/components/_form.scss */
@@ -651,7 +684,7 @@ body {
   display: block;
 }
 
-/* line 5, ../sass/components/_gallery.scss */
+/* line 6, ../sass/components/_gallery.scss */
 .news-slider {
   position: relative;
   display: inline-block;
@@ -659,8 +692,15 @@ body {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
+  *zoom: 1;
 }
-/* line 8, ../sass/components/_gallery.scss */
+/* line 38, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.news-slider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 10, ../sass/components/_gallery.scss */
 .news-slider .slide-img {
   position: absolute;
   height: 270px;
@@ -672,13 +712,13 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 14, ../sass/components/_gallery.scss */
+/* line 16, ../sass/components/_gallery.scss */
 .news-slider .slide-img.hide-img {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 19, ../sass/components/_gallery.scss */
+/* line 21, ../sass/components/_gallery.scss */
 .news-slider .slide-img .title {
   position: absolute;
   bottom: 0;
@@ -702,7 +742,7 @@ body {
   opacity: 0.7;
   text-decoration: none;
 }
-/* line 38, ../sass/components/_gallery.scss */
+/* line 40, ../sass/components/_gallery.scss */
 .news-slider .slide-img .bottom-note {
   position: relative;
   bottom: 0;
@@ -711,14 +751,14 @@ body {
   line-height: 0;
   white-space: nowrap;
 }
-/* line 46, ../sass/components/_gallery.scss */
+/* line 48, ../sass/components/_gallery.scss */
 .news-slider .slide-button-group {
   position: relative;
   display: block;
   clear: both;
   z-index: 100;
 }
-/* line 52, ../sass/components/_gallery.scss */
+/* line 54, ../sass/components/_gallery.scss */
 .news-slider .slide-button {
   position: relative;
   display: inline-block;
@@ -734,12 +774,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 61, ../sass/components/_gallery.scss */
+/* line 63, ../sass/components/_gallery.scss */
 .news-slider .slide-button:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 65, ../sass/components/_gallery.scss */
+/* line 67, ../sass/components/_gallery.scss */
 .news-slider .slide-dot {
   display: inline-block;
   vertical-align: middle;
@@ -753,7 +793,7 @@ body {
   border-radius: 10px;
 }
 
-/* line 75, ../sass/components/_gallery.scss */
+/* line 77, ../sass/components/_gallery.scss */
 .news-group {
   position: relative;
   display: inline-block;
@@ -762,7 +802,7 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 78, ../sass/components/_gallery.scss */
+/* line 80, ../sass/components/_gallery.scss */
 .news-group .news-img {
   line-height: 0;
   display: inline-block;
@@ -772,7 +812,7 @@ body {
   *display: inline;
   *float: left;
 }
-/* line 83, ../sass/components/_gallery.scss */
+/* line 85, ../sass/components/_gallery.scss */
 .news-group .news-img {
   display: inline-block;
   vertical-align: middle;
@@ -809,7 +849,7 @@ body {
   text-decoration: none;
   font-size: 13px;
   color: #000;
-  font-weight: bold;
+  font-weight: 600;
 }
 /* line 25, ../sass/components/_list.scss */
 .list-vertical a.title:hover {
