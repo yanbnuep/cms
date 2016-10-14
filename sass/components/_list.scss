@@ -1,14 +1,14 @@
 @import "compass/css3/transition";
+@import "compass/utilities/general/clearfix";
 .list-vertical {
 	position: relative;
+	a {text-decoration: none;}
 	& .list{
 		position: relative;
-		display: block;
 		margin-bottom: 16px;
-		margin-left: 25px;
+		margin-left: 15px;
 		padding-top: 10px;
-		float:left;
-		
+		overflow: hidden;
 		& .date {
 			display: block;
 			clear: both;
@@ -31,6 +31,23 @@
 		height: 0;
 		width: 100%;
 		border-bottom: 1px solid #ccc;
+	}
+
+	& .list-group{
+		position: relative;
+		width: 100%;
+		@include pie-clearfix();
+		& .list,& .logo{
+			position: relative;
+		}
+		& .list {
+			margin: 0;
+			padding: 0;
+		}
+		& .logo {
+			float: left;
+		}
+
 	}
 }
 

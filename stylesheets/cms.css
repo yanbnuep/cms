@@ -823,18 +823,21 @@ body {
   margin-left: 6px;
 }
 
-/* line 2, ../sass/components/_list.scss */
+/* line 3, ../sass/components/_list.scss */
 .list-vertical {
   position: relative;
 }
-/* line 4, ../sass/components/_list.scss */
+/* line 5, ../sass/components/_list.scss */
+.list-vertical a {
+  text-decoration: none;
+}
+/* line 6, ../sass/components/_list.scss */
 .list-vertical .list {
   position: relative;
-  display: block;
   margin-bottom: 16px;
-  margin-left: 25px;
+  margin-left: 15px;
   padding-top: 10px;
-  float: left;
+  overflow: hidden;
 }
 /* line 12, ../sass/components/_list.scss */
 .list-vertical .list .date {
@@ -864,13 +867,38 @@ body {
   width: 100%;
   border-bottom: 1px solid #ccc;
 }
+/* line 36, ../sass/components/_list.scss */
+.list-vertical .list-group {
+  position: relative;
+  width: 100%;
+  *zoom: 1;
+}
+/* line 38, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.list-vertical .list-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 40, ../sass/components/_list.scss */
+.list-vertical .list-group .list, .list-vertical .list-group .logo {
+  position: relative;
+}
+/* line 43, ../sass/components/_list.scss */
+.list-vertical .list-group .list {
+  margin: 0;
+  padding: 0;
+}
+/* line 47, ../sass/components/_list.scss */
+.list-vertical .list-group .logo {
+  float: left;
+}
 
-/* line 39, ../sass/components/_list.scss */
+/* line 56, ../sass/components/_list.scss */
 .list-nav ul a {
   text-decoration: none;
   color: #212121;
 }
-/* line 43, ../sass/components/_list.scss */
+/* line 60, ../sass/components/_list.scss */
 .list-nav h1, .list-nav h2, .list-nav h3, .list-nav h4 {
   font-family: Roboto;
   color: #15c;
@@ -878,11 +906,11 @@ body {
   margin-left: 3px;
   padding-bottom: 10px;
 }
-/* line 50, ../sass/components/_list.scss */
+/* line 67, ../sass/components/_list.scss */
 .list-nav ul li {
   padding-bottom: 10px;
 }
-/* line 53, ../sass/components/_list.scss */
+/* line 70, ../sass/components/_list.scss */
 .list-nav ul li a {
   display: block;
   padding: 3px 0 3px 5px;
@@ -893,7 +921,7 @@ body {
   -webkit-transition: all 0.2;
   transition: all 0.2;
 }
-/* line 58, ../sass/components/_list.scss */
+/* line 75, ../sass/components/_list.scss */
 .list-nav ul li a:hover {
   background-color: #999;
   color: #fafafa;
