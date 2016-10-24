@@ -831,7 +831,7 @@ body {
 .list-vertical a {
   text-decoration: none;
 }
-/* line 6, ../sass/components/_list.scss */
+/* line 8, ../sass/components/_list.scss */
 .list-vertical .list {
   position: relative;
   margin-bottom: 16px;
@@ -839,7 +839,7 @@ body {
   padding-top: 10px;
   overflow: hidden;
 }
-/* line 12, ../sass/components/_list.scss */
+/* line 14, ../sass/components/_list.scss */
 .list-vertical .list .date {
   display: block;
   clear: both;
@@ -847,18 +847,18 @@ body {
   margin-top: 5px;
   font-weight: normal;
 }
-/* line 20, ../sass/components/_list.scss */
+/* line 22, ../sass/components/_list.scss */
 .list-vertical a.title {
   text-decoration: none;
   font-size: 13px;
   color: #000;
   font-weight: 600;
 }
-/* line 25, ../sass/components/_list.scss */
+/* line 27, ../sass/components/_list.scss */
 .list-vertical a.title:hover {
   color: #999;
 }
-/* line 27, ../sass/components/_list.scss */
+/* line 31, ../sass/components/_list.scss */
 .list-vertical .border {
   position: absolute;
   top: 0;
@@ -867,11 +867,17 @@ body {
   width: 100%;
   border-bottom: 1px solid #ccc;
 }
-/* line 36, ../sass/components/_list.scss */
+/* line 39, ../sass/components/_list.scss */
 .list-vertical .list-group {
   position: relative;
+  margin-top: 15px;
+  padding-left: 15px;
   width: 100%;
   *zoom: 1;
+}
+/* line 43, ../sass/components/_list.scss */
+.list-vertical .list-group:first-child {
+  margin: 0;
 }
 /* line 38, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 .list-vertical .list-group:after {
@@ -879,38 +885,57 @@ body {
   display: table;
   clear: both;
 }
-/* line 40, ../sass/components/_list.scss */
+/* line 46, ../sass/components/_list.scss */
 .list-vertical .list-group .list, .list-vertical .list-group .logo {
   position: relative;
 }
-/* line 43, ../sass/components/_list.scss */
+/* line 50, ../sass/components/_list.scss */
 .list-vertical .list-group .list {
   margin: 0;
   padding: 0;
+  left: 10px;
+  top: 5px;
+  font-weight: 500;
 }
-/* line 47, ../sass/components/_list.scss */
+/* line 57, ../sass/components/_list.scss */
 .list-vertical .list-group .logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
   float: left;
+  white-space: nowrap;
+  line-height: 35px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* line 67, ../sass/components/_list.scss */
+.list-vertical .list-group .logo .date {
+  white-space: nowrap;
+  font-size: 12px;
 }
 
-/* line 56, ../sass/components/_list.scss */
+/* line 77, ../sass/components/_list.scss */
 .list-nav ul a {
   text-decoration: none;
   color: #212121;
 }
-/* line 60, ../sass/components/_list.scss */
-.list-nav h1, .list-nav h2, .list-nav h3, .list-nav h4 {
+/* line 81, ../sass/components/_list.scss */
+.list-nav h1,
+.list-nav h2,
+.list-nav h3,
+.list-nav h4 {
   font-family: Roboto;
   color: #15c;
   font-weight: bold;
   margin-left: 3px;
   padding-bottom: 10px;
 }
-/* line 67, ../sass/components/_list.scss */
+/* line 91, ../sass/components/_list.scss */
 .list-nav ul li {
   padding-bottom: 10px;
 }
-/* line 70, ../sass/components/_list.scss */
+/* line 94, ../sass/components/_list.scss */
 .list-nav ul li a {
   display: block;
   padding: 3px 0 3px 5px;
@@ -921,7 +946,7 @@ body {
   -webkit-transition: all 0.2;
   transition: all 0.2;
 }
-/* line 75, ../sass/components/_list.scss */
+/* line 99, ../sass/components/_list.scss */
 .list-nav ul li a:hover {
   background-color: #999;
   color: #fafafa;

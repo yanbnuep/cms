@@ -1,79 +1,105 @@
 @import "compass/css3/transition";
 @import "compass/utilities/general/clearfix";
 .list-vertical {
-	position: relative;
-	a {text-decoration: none;}
-	& .list{
-		position: relative;
-		margin-bottom: 16px;
-		margin-left: 15px;
-		padding-top: 10px;
-		overflow: hidden;
-		& .date {
-			display: block;
-			clear: both;
-			font-size: 12px;
-			margin-top: 5px;
-			font-weight: normal;
-		}
-	}
-	a.title{
-		text-decoration: none;
-		font-size: 13px;
-		color: #000;
-		font-weight: 600;
-		&:hover {color: #999;}
-	}
-	.border {
-		position: absolute;
-		top: 0;
-		display: block;
-		height: 0;
-		width: 100%;
-		border-bottom: 1px solid #ccc;
-	}
+    position: relative;
+    a {
+        text-decoration: none;
+    }
+    & .list {
+        position: relative;
+        margin-bottom: 16px;
+        margin-left: 15px;
+        padding-top: 10px;
+        overflow: hidden;
+        & .date {
+            display: block;
+            clear: both;
+            font-size: 12px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+    }
+    a.title {
+        text-decoration: none;
+        font-size: 13px;
+        color: #000;
+        font-weight: 600;
+        &:hover {
+            color: #999;
+        }
+    }
+    .border {
+        position: absolute;
+        top: 0;
+        display: block;
+        height: 0;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    & .list-group {
+        position: relative;
+        margin-top: 15px;
+        padding-left: 15px;
+        &:first-child {margin: 0}
+        width: 100%;
+        @include pie-clearfix();
+        & .list,
+        & .logo {
+            position: relative;
+        }
+        & .list {
+            margin: 0;
+            padding: 0;
+            left: 10px;
+            top: 5px;
+            font-weight: 500;
+        }
+        & .logo {
+            width: 35px;
+            height: 35px;
+            border-radius: 17.5px;
+            float: left;
+            white-space: nowrap;
+            line-height: 35px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            .date {
+            	white-space: nowrap;
+           		font-size: 12px;
 
-	& .list-group{
-		position: relative;
-		width: 100%;
-		@include pie-clearfix();
-		& .list,& .logo{
-			position: relative;
-		}
-		& .list {
-			margin: 0;
-			padding: 0;
-		}
-		& .logo {
-			float: left;
-		}
-
-	}
+            }
+        }
+    }
 }
 
 .list-nav {
-
-	ul a {
-		text-decoration: none;
-		color: #212121;
-	}
-	h1,h2,h3,h4 {
-		font-family: Roboto;
-		color: #15c;
-		font-weight: bold;
-		margin-left: 3px;
-		padding-bottom: 10px;
-	}
-	& ul li {
-		padding-bottom: 10px;
-	}
-	& ul li a {
-		display: block;
-		padding: 3px 0 3px 5px;
-		font-size: 14px;
-		font-weight: 500;
-		&:hover {background-color: #999;color: #fafafa;}
-		@include single-transition(all, .2);
-	}
-
+    ul a {
+        text-decoration: none;
+        color: #212121;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: Roboto;
+        color: #15c;
+        font-weight: bold;
+        margin-left: 3px;
+        padding-bottom: 10px;
+    }
+    & ul li {
+        padding-bottom: 10px;
+    }
+    & ul li a {
+        display: block;
+        padding: 3px 0 3px 5px;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+            background-color: #999;
+            color: #fafafa;
+        }
+        @include single-transition(all, .2);
+    }
 }
