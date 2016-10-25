@@ -5,8 +5,8 @@ requirejs.config({
     "baseUrl": "resoure/javascript/lib",
     "path": {
         "app": "../modules",
-
+        'jquery':"jquery.1.12.4.min"
     }
 });
 
-requirejs(["../modules/main"]);
+requirejs(['jquery.1.12.4.min',"../modules/main"]);

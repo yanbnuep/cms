@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Intranet</title>
     <link rel="stylesheet" href="./stylesheets/cms.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script  data-main="resoure/javascript/app" src="resoure/javascript/lib/require.js"></script>
-    <!--<script src="resoure/javascript/lib/jquery-1.12.4.min.js"></script>-->
-    <!--<script src="resoure/javascript/lib/jquery-ui.min.js"></script>-->
+    <script src="resoure/javascript/lib/jquery-1.12.4.min.js"></script>
+    <script src="resoure/javascript/lib/jquery-ui.min.js"></script>
+    <!--<script>$.noConflict()</script>-->
 </head>
-
 <body>
 <div class="nav" style="width: 100%; height: 54px;padding: 0 24px;">
     <div class="fluid-wrapper">
@@ -195,16 +193,6 @@
                 <li><a href="">OA</a></li>
             </ul>
         </div>
-        <script>
-            $(function () {
-                $(".list-nav a").hover(
-                        function () {
-                            $(this).animate({}, 500, function () {
-                            });
-                        }
-                )
-            });
-        </script>
         <div class="col-3">
             <form action="" id="ESLogin" class="form-normal form-vertical" style="">
                 <div class="form-title" style="color: #15c;font-weight: 700;">E-Service</div>
@@ -339,6 +327,43 @@
                     }
                 </style>
             </div>
+        </div>
+        <div class="col-4">
+            <div class="weather-forecast">
+                <ul class="data-list">
+                    <li>
+                        <div class="weather-key">Temperature: </div>
+                        <div class="val" id="temp"></div>
+                    </li>
+                    <li>
+                        <div class="weather-key">Rain: </div>
+                        <div class="val" id="rain"></div>
+                    </li>
+                    <li>
+                        <div class="weather-key">Wind: </div>
+                        <div class="val" id="wind"></div>
+                    </li>
+                </ul>
+                <div class="date-picker-dropdown"></div>
+            </div>
+            <script>
+                $(function () {
+                    var     weather = {temp:[],rain:[],wind:[]},
+                            date = '',
+                            appID = "5c2e884a2a9a9ef74cc4011cf77601e1",
+                            cityID = "1821275",
+                            reqUrl = "http://api.openweathermap.org/data/2.5/forecast?id="+cityID+"&APPID="+appID;
+                    $.getJSON(reqUrl,function(json){
+                        $.each(json['list'],function(key,val){
+                            date = val['dt_txt'];
+                            temp[date] = val['main']['temp'];
+                            rain[date] = val['rain']['3h'];
+                            wind[date] = val['wind']['speed'];
+                        });
+                        $("#temp").html(weather.temp[0]);
+                    });
+                });
+            </script>
         </div>
     </div>
 </div>
