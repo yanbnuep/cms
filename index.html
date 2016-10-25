@@ -155,7 +155,7 @@
                     .list #readMore {
                         color: #FF5443;
                         cursor: pointer;
-                        font: 700 12px Georgia;
+
                     }
                 </style>
             </ul>
@@ -328,39 +328,40 @@
                 </style>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-3">
             <div class="weather-forecast">
                 <ul class="data-list">
                     <li>
                         <div class="weather-key">Temperature: </div>
                         <div class="val" id="temp"></div>
                     </li>
-                    <li>
-                        <div class="weather-key">Rain: </div>
-                        <div class="val" id="rain"></div>
-                    </li>
+
                     <li>
                         <div class="weather-key">Wind: </div>
                         <div class="val" id="wind"></div>
                     </li>
+                       <select name="" id="weatherTime" class="weather-selector"></select>
                 </ul>
-                <div class="date-picker-dropdown"></div>
             </div>
             <script>
                 $(function () {
-                    var     weather = {temp:[],rain:[],wind:[]},
-                            date = '',
+                    var     weather = {date:[],temp:[],rain:[],wind:[]},
+                            time = '',
                             appID = "5c2e884a2a9a9ef74cc4011cf77601e1",
                             cityID = "1821275",
                             reqUrl = "http://api.openweathermap.org/data/2.5/forecast?id="+cityID+"&APPID="+appID;
                     $.getJSON(reqUrl,function(json){
                         $.each(json['list'],function(key,val){
-                            date = val['dt_txt'];
-                            temp[date] = val['main']['temp'];
-                            rain[date] = val['rain']['3h'];
-                            wind[date] = val['wind']['speed'];
+                            weather.date.push(val.dt_txt);
+                            weather.temp.push(Math.floor(val.main.temp-273.15));
+                            weather.wind.push("deg:"+val.wind.deg+" speed:"+val.wind.speed);
                         });
                         $("#temp").html(weather.temp[0]);
+                        $("#wind").html(weather.wind[0]);
+                        $.each(weather.date,function(key,val){
+                                time = "<option id="+"weatherDate"+key+"\"\>"+val+"</option>";
+                            $("#weatherTime").append(time);
+                        })
                     });
                 });
             </script>
