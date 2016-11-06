@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <div class="left clearfix" style="width: 600px;min-height: 1px;float: left;overflow: hidden;">
+            <div class="slide-show">
+                <ul style="margin: 0;" id="slidemageList">
+                    <li id="cur">
+                        <a href=""><img src="http://www.people.com.cn/NMediaFile/2016/1104/MAIN201611040829594648159262281.jpg" alt=""></a>
+                        <div class="title">
+                            <a href="">全国多地出现大雾</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="http://www.people.com.cn/NMediaFile/2016/1104/MAIN201611040838204579603308180.jpg" alt=""></a>
+                        <div class="title">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="http://www.people.com.cn/NMediaFile/2016/1104/MAIN201611040819295645490802663.jpg" alt=""></a>
+                        <div class="title">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="http://www.people.com.cn/NMediaFile/2016/1104/MAIN201611040938125087983458587.JPG" alt=""></a>
+                        <div class="title">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="http://www.people.com.cn/NMediaFile/2016/1104/MAIN201611040725314044230905140.jpg" alt=""></a>
+                        <div class="title">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                </ul>
+                <span id="slideNewsCounter" class="pagecount"><b></b>/<em></em></span>
+                <span id="news-pre" class="slide-left-btn"></span>
+                <span id="news-next" class="slide-right-btn"></span>
+            </div>
+        </div>
+        <div class="right clearfix" style="width: 330px;min-height: 1px;float: left;">
+            <div class="right-news">
+                <div class="tab-header">
+                    <span class="tabselector curtab" id="tabselector1">News</span>
+                    <span class="tabselector" id="tabselector2">Oran</span>
+                    <span class="tabselector" id="tabselector3">Header</span>
+                </div>
+                <div class="tab-list-container">
+                    <div class="tab-news-list curlist">
+                        <ul>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                            <li class="list-item"><a href="">四隊人馬出戰金沙遠足</a></li>
+                            <li class="list-item"><a href="">感恩访谈——与澳航的20年</a></li>
+                            <li class="list-item"><a href="">澳航助圓藍天夢 澳航助圓藍天夢 十澳學員 赴法衝上雲霄</a></li>
+                            <li class="list-item"><a href="">簡訊：財務部赴曼谷營業助組建團隊</a></li>
+                            <li class="list-item"><a href="">另辟蹊径求创新，产品升级路线</a></li>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-news-list">
+                        <ul>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                            <li class="list-item"><a href="">四隊人馬出戰金沙遠足</a></li>
+                            <li class="list-item"><a href="">感恩访谈——与澳航的20年</a></li>
+                            <li class="list-item"><a href="">澳航助圓藍天夢 澳航助圓藍天夢 十澳學員 赴法衝上雲霄</a></li>
+                            <li class="list-item"><a href="">簡訊：財務部赴曼谷營業助組建團隊</a></li>
+                            <li class="list-item"><a href="">另辟蹊径求创新，产品升级路线</a></li>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-news-list">
+                        <ul>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                            <li class="list-item"><a href="">四隊人馬出戰金沙遠足</a></li>
+                            <li class="list-item"><a href="">感恩访谈——与澳航的20年</a></li>
+                            <li class="list-item"><a href="">澳航助圓藍天夢 澳航助圓藍天夢 十澳學員 赴法衝上雲霄</a></li>
+                            <li class="list-item"><a href="">簡訊：財務部赴曼谷營業助組建團隊</a></li>
+                            <li class="list-item"><a href="">另辟蹊径求创新，产品升级路线</a></li>
+                            <li class="list-item"><a href="">颱風天的“尋人啟事”</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+/*body wrapper clearfix*/
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    min-height: 1px;
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: none;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*slide show*/
+
+.slide-show {
+    position: relative;
+    float: left;
+    display: block;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide-show img {
+    width: 600px;
+    height: 400px;
+}
+
+.slide-show > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+
+.slide-show >ul li {
+    position: relative;
+    display: none;
+    opacity: 0.8;
+}
+
+.slide-show >ul li:first-child {
+    opacity: 1
+}
+
+.slide-show >ul li#cur {
+    position: relative;
+    display: inline;
+}
+
+.slide-show >ul li>.title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+    color: #fff;
+    z-index: 100;
+    background-image: url('http://www.people.com.cn/img/2016people/images/box_kuai.png');
+    text-align: center;
+}
+
+.slide-show >ul li>.title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pagecount {
+    position: absolute;
+    left: 15%;
+    bottom: 7px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 120;
+    line-height: 200%;
+    list-style: none;
+}
+
+.pagecount b {
+    font-size: 28px;
+    color: #e71f18;
+    margin-right: 1px;
+}
+
+.pagecount em {
+    font-size: 28px;
+    color: #fff;
+    margin-left: 2px;
+}
+
+.slide-left-btn,
+.slide-right-btn {
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 25px;
+    bottom: 15px;
+    cursor: pointer;
+    z-index: 130;
+}
+
+.slide-left-btn {
+    left: 11%;
+    background: url('http://www.people.com.cn/img/2016people/images/focus_left_b.png');
+}
+
+.slide-right-btn {
+    right: 11%;
+    background: url('http://www.people.com.cn/img/2016people/images/focus_right_b.png');
+}
+
+
+/*right side news*/
+
+.right-news {
+    position: relative;
+    display: block;
+    width: 315PX;
+    margin-left: 15px;
+}
+
+.tab-news-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tab-news-list {
+    display: none;
+}
+.tab-news-list.curlist{
+    display: block;
+}
+.tab-news-list li.list-item {
+    padding: 0px 0 14px 0;
+}
+
+.tab-news-list li.list-item a{
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.tab-news-list li.list-item:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0 15px 0;
+}
+.tab-header {
+    height: 40px;
+    line-height: 50px;
+    border-left: 1px solid #cfcfcf;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+.tab-header .tabselector {
+    width: 103px;
+    height: 39px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid #cfcfcf;
+}
+.tab-header .tabselector.curtab {
+    background-color: #fff;
+}
+</style>
+<script>
+window.onload = function() {
+    //slide news初始化 ， 添加页脚计数
+    var newsImages = $('ul#slidemageList>li'),
+        slideMount = $('#slideNewsCounter em'),
+        slideCur = $('#slideNewsCounter b');
+    slideMount.html(newsImages.length);
+    slideCur.html(1);
+
+    //slide 开始
+
+    var slideNewsImages = triggerInterval(function() {
+        slideNext(newsImages, '#slidemageList li#cur', 1);
+    }, 5000);
+    $('#news-pre').click(function() {
+        clearInterval(slideNewsImages);
+        slideNext(newsImages, '#slidemageList li#cur', -1)
+        slideNewsImages = triggerInterval(function() {
+            slideNext(newsImages, '#slidemageList li#cur', 1);
+        }, 5000);
+    });
+    $('#news-next').click(function() {
+        clearInterval(slideNewsImages);
+        slideNext(newsImages, '#slidemageList li#cur', 1);
+        slideNewsImages = triggerInterval(function() {
+            slideNext(newsImages, '#slidemageList li#cur', 1);
+        }, 5000);
+
+    });
+};
+
+
+
+/*slide image 滚动图片*/
+//设置计时器
+function triggerInterval(func, timmer) {
+    return window.setInterval(function() {
+        func();
+    }, timmer);
+}
+//设置切换
+function slideNext(arr, mark, next) {
+    var cur = arr.index($(mark));
+    $(arr[cur]).stop(true, true);
+    if (next > 0) {
+        if (cur === arr.length - 1) {
+            showElement(arr[0]);
+            changeSlideNB(1);
+        } else {
+            showElement(arr[cur + 1]);
+            changeSlideNB(cur + 2);
+        }
+    } else {
+        if (cur === 0) {
+            showElement(arr[arr.length - 1]);
+            changeSlideNB(arr.length);
+        } else {
+            showElement(arr[cur - 1]);
+            changeSlideNB(cur);
+        }
+    }
+    hideElement(arr[cur]);
+}
+
+function showElement(ele) {
+    $(ele).attr('id', 'cur');
+    $(ele).animate({
+        opacity: 1
+    }, 800);
+}
+
+function hideElement(ele) {
+    $(ele).removeAttr('id');
+    $(ele).css('opacity', 0.8);
+
+}
+
+function changeSlideNB(nxt) {
+    $('#slideNewsCounter b').html(nxt);
+}
+</script>
+
+</html>
